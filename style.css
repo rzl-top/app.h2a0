@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(180deg, #081a33, #020b1f);
+  color: white;
+}
+
+/* الخلفية */
+.bg span {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: rgba(200,200,200,0.2);
+  border-radius: 50%;
+}
+
+.bg span:nth-child(1){ top:20%; left:30%; }
+.bg span:nth-child(2){ top:60%; left:70%; }
+.bg span:nth-child(3){ top:80%; left:20%; }
+
+/* الهيدر */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* الكروت */
+.container {
+  padding: 15px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 15px;
+}
+
+button {
+  button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #2b6fff, #4da3ff);
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card {
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+background: linear-gradient(180deg, #081a33, #020b1f);
+
+background: radial-gradient(circle at top, #0f2a5c, #020b1f);
+  
+  .search-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* مخفي بالبداية */
+#search {
+  width: 0;
+  opacity: 0;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  transition: 0.3s;
+}
+
+/* لما يفتح */
+#search.active {
+  width: 120px;
+  opacity: 1;
+}
